@@ -6,4 +6,5 @@ export interface Life {
 export interface Data {
     title: string;
     lifes: Life[];
+    expected: Life[];
 }
