@@ -1,5 +1,6 @@
-import { test } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 import { Data } from "../src/type";
+import { getGOLBoard } from "../src";
 
 const data: Data[] = [
     { title: 'still', lifes: [{x: 1,y: 1}, {x: 1,y: 2}, {x: 2,y: 1}, {x: 2,y: 2}] },
@@ -8,8 +9,9 @@ const data: Data[] = [
 ];
 
 test.describe("Test", async () => {
-    data.forEach(({ title }) => {
+    data.forEach(({ title, lifes }) => {
       test(`Test '${title} patter'`, async () => {
+        expect(getGOLBoard(lifes)).toEqual(lifes);
       });
     });
 });
