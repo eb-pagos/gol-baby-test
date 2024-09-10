@@ -1,10 +1,7 @@
-interface Data {
-    title: string;
-    value: number;
-}
+import { Data } from "../src/type";
 
 const data: Data[] = [
-    { title: 'still', value: 1 },
-    { title: 'blinker', value: 2 },
-    { title: 'glider', value: 3 },
+    { title: 'still', coordinates: null },
+    { title: 'blinker', coordinates: null },
+    { title: 'glider', coordinates: null },
 ];
