@@ -21,9 +21,9 @@ const data: Data[] = [
 ];
 
 test.describe("Test", async () => {
-    data.forEach(({ title, lifes }) => {
+    data.forEach(({ title, lifes, expected }) => {
       test(`Test '${title} patter'`, async () => {
-        expect(getGOLBoard(lifes)).toEqual(lifes);
+        expect(getGOLBoard(lifes)).toEqual(expected);
       });
     });
 });
