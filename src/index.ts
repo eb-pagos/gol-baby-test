@@ -21,7 +21,8 @@ export const getNeighbors = (mapOfLife) => {
 
     let newState = {}
     for(const item of mapOfLife){
-        newState[item] = item[item].lenght;
+
+        newState[item.x] = item[item.x].lenght;
     }
     return mapOfLife;
 }
