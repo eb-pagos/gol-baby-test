@@ -1,6 +1,14 @@
+import {Life} from './type.ts'
 
-
-const getGOLBoard = (boardPositions){
-
-    return boardPositions;
+export const getGOLBoard = (boardPositions: Life[]) => {
+    
+    const result = {};
+     for (const item of boardPositions){
+        if(result[item.x]){
+            result[item.x] = item.y
+        }
+     }
+    return result;
 }
+
+
