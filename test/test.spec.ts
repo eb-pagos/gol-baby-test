@@ -1,7 +1,7 @@
 import { Data } from "../src/type";
 
 const data: Data[] = [
-    { title: 'still', coordinates: null },
-    { title: 'blinker', coordinates: null },
-    { title: 'glider', coordinates: null },
+    { title: 'still', lifes: [{x: 1,y: 1}, {x: 1,y: 2}, {x: 2,y: 1}, {x: 2,y: 2}] },
+    { title: 'blinker', lifes: [{x: 1,y: 1}, {x: 1,y: 2}, {x: 2,y: 1}, {x: 2,y: 2}] },
+    { title: 'glider', lifes: [{x: 1,y: 1}, {x: 1,y: 2}, {x: 2,y: 1}, {x: 2,y: 2}] },
 ];
