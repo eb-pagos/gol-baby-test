@@ -17,4 +17,7 @@ export const getGOLBoard = (boardPositions: Life[]) => {
 }
 
 
+export const getNeighbors = (mapOfLife){
+    return mapOfLife;
+}
 
