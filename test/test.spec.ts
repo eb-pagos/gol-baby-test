@@ -7,9 +7,9 @@ const data: Data[] = [
     { title: 'glider', lifes: [{x: 1,y: 1}, {x: 1,y: 2}, {x: 2,y: 1}, {x: 2,y: 2}] },
 ];
 
-test.describe.parallel("Test", async () => {
-    data.forEach(({ title, lifes })) => {
+test.describe("Test", async () => {
+    data.forEach(({ title }) => {
       test(`Test '${title} patter'`, async () => {
       });
-    }
+    });
 });
