@@ -18,6 +18,11 @@ export const getGOLBoard = (boardPositions: Life[]) => {
 
 
 export const getNeighbors = (mapOfLife) => {
+
+    let newState = {}
+    for(const item of mapOfLife){
+        newState[item] = item[item].lenght;
+    }
     return mapOfLife;
 }
 
