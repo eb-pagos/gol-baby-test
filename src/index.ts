@@ -2,5 +2,5 @@
 
 const getGOLBoard = (boardPositions){
 
-    returns boardPositions;
+    return boardPositions;
 }
